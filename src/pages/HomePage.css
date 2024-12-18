@@ -1,0 +1,920 @@
+/* General Page Styling */
+.home-content {
+    padding: 2rem;
+    /* Padding for the main content */
+    font-family: 'Arial', sans-serif;
+    /* Font family */
+    color: #333;
+    /* Text color */
+    line-height: 1.6;
+    /* Line height for readability */
+    display: flex;
+    /* Flexbox layout */
+    flex-direction: column;
+    /* Column direction */
+    gap: 2rem;
+    /* Space between elements */
+}
+
+/* Welcome Section */
+.welcome-section {
+    display: flex;
+    /* Flexbox layout */
+    justify-content: space-between;
+    /* Space between elements */
+    align-items: center;
+    /* Center items vertically */
+    background-color: #ffffff;
+    /* White background */
+    padding: 40px;
+    /* Padding for the section */
+    border-radius: 8px;
+    /* Rounded corners */
+    gap: 2rem;
+    /* Space between elements */
+}
+
+/* Text Section */
+.welcome-text {
+    flex: 1;
+    /* Allow text section to grow */
+    padding-right: 5rem;
+    /* Padding on the right */
+}
+
+.welcome-text h1,
+.welcome-text h2 {
+    color: #555;
+    /* Color for headings */
+    margin-top: 0;
+    /* No margin on top */
+    margin-bottom: 20px;
+    /* Space below headings */
+}
+
+.welcome-section h1 {
+    color: #1a0471;
+    /* Specific color for main heading */
+}
+
+.welcome-text p {
+    font-size: 1rem;
+    /* Font size for paragraphs */
+    color: #555;
+    /* Paragraph color */
+    margin-bottom: 1rem;
+    /* Space below paragraphs */
+    text-align: justify;
+    /* Justify text */
+}
+
+.read-more-btn {
+    background-color: #ff7f50;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    margin-top: 1rem;
+    /* Space above button */
+    padding: 0.8rem 1.5rem;
+    /* Padding for button */
+    font-size: 1rem;
+    /* Font size for button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Transition for hover effect */
+}
+
+.read-more-btn:hover {
+    background-color: #e7673c;
+    /* Change background color on hover */
+}
+
+/* Carousel Section */
+.carousel {
+    position: relative;
+    /* Position relative for child elements */
+    width: 100%;
+    /* Full width */
+    height: 450px;
+    /* Fixed height */
+    padding: 10px;
+    /* Padding for carousel */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Center items */
+    align-items: center;
+    /* Center items vertically */
+    overflow: hidden;
+    /* Hide overflow */
+    flex: 1;
+    /* Allow carousel to grow */
+}
+
+.carousel-images-container {
+    display: flex;
+    /* Flexbox layout */
+    transition: transform 0.5s ease-in-out;
+    /* Smooth transition */
+    gap: 1rem;
+    /* Space between images */
+}
+
+.carousel-image {
+    width: 100px;
+    /* Fixed width for images */
+    height: 100px;
+    /* Fixed height for images */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+    border-radius: 12px;
+    /* Rounded corners */
+    filter: blur(2px);
+    /* Blur effect */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Main Image (Fixed in Center) */
+.highlight-frame {
+    position: absolute;
+    /* Position absolute for overlay effect */
+    width: 300px;
+    /* Fixed width for highlight frame */
+    height: 300px;
+    /* Fixed height for highlight frame */
+    border-radius: 12px;
+    /* Rounded corners */
+    z-index: 2;
+    /* Layering */
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+.highlight-frame img {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+}
+
+/* Active Image Styling */
+.carousel-image.active {
+    width: 300px;
+    /* Updated width for active image */
+    height: 300px;
+    /* Updated height for active image */
+    filter: none;
+    /* Remove blur */
+    opacity: 1;
+    /* Fully opaque */
+    box-shadow: 0px 2px 20px #ff7f50;
+    /* Shadow effect */
+    transform: scale(1.2);
+    /* Scale effect */
+    z-index: 3;
+    /* Layering */
+}
+
+/* Side Images (Moving) */
+.carousel-image.left,
+.carousel-image.right {
+    width: 150px;
+    /* Width for side images */
+    height: 150px;
+    /* Height for side images */
+    filter: blur(1.5px);
+    /* Slight blur effect */
+    opacity: 0.8;
+    /* Slightly transparent */
+    z-index: 1;
+    /* Layering */
+}
+
+.welcome-images {
+    flex: 1;
+    /* Allow welcome images section to grow */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Center items */
+    align-items: center;
+    /* Center items vertically */
+    position: relative;
+    /* Position relative for child elements */
+    width: 50%;
+    /* Width for the images section */
+}
+
+
+
+
+
+
+
+
+
+/* Company Details Section (Second Div) */
+.company-details {
+    padding: 40px;
+    /* Space inside the section */
+    background-color: #fff;
+    /* White background */
+    box-sizing: border-box;
+    /* Include padding in width */
+    width: 100%;
+    /* Full width */
+}
+
+.company-details h2 {
+    font-size: 2rem;
+    /* Heading font size */
+    text-align: center;
+    /* Centered heading */
+    margin: 20px 0;
+    /* Space below heading */
+    color: #1a0471;
+    /* Heading color */
+    font-weight: bold;
+    /* Bold heading */
+}
+
+.info-row {
+    display: flex;
+    /* Flexbox layout */
+    justify-content: space-between;
+    /* Space between items */
+    flex-wrap: nowrap;
+    /* No wrapping */
+    overflow-x: auto;
+    /* Horizontal scrolling if needed */
+    padding: 2rem;
+    /* Space inside the row */
+}
+
+/* Container for all info items */
+.info-container {
+    display: flex;
+    /* Enable Flexbox layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row if needed */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: flex-start;
+    /* Align items vertically to the top */
+    gap: 15px;
+    /* Add consistent spacing between items */
+    padding: 20px;
+    /* Add space inside the container */
+}
+
+/* Individual info item */
+.info-item {
+    display: flex;
+    /* Flexbox layout */
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: center;
+    /* Center items horizontally */
+    justify-content: space-between;
+    /* Distribute space evenly within the item */
+    padding: 30px 10px 20px 10px;
+    /* Add space inside the item */
+    text-align: center;
+    /* Center-align text */
+    width: 160px;
+    /* Fixed width */
+    height: 220px;
+    /* Fixed height for consistent alignment */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    /* Add subtle shadow */
+    border-radius: 8px;
+    /* Rounded corners */
+    background-color: #fff;
+    /* Add a white background */
+    margin: 0 5px;
+    /* Horizontal spacing between items */
+    transition: transform 0.2s ease-in-out;
+}
+
+.info-item:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+/* Image inside info item */
+.info-item img {
+    width: 45px;
+    /* Set a fixed image width */
+    height: 45px;
+    /* Set a fixed image height */
+    margin-bottom: 8px;
+    /* Add space below the image */
+    object-fit: contain;
+    /* Ensure the image fits within its dimensions */
+}
+
+/* Title in info item */
+.info-item h4 {
+    font-size: 1rem;
+    /* Font size for titles */
+    color: #555;
+    /* Title color */
+    margin: 5px;
+    /* Add space below the title */
+    line-height: 1.2;
+    /* Adjust line height for better spacing */
+}
+
+/* Description in info item */
+.info-item p {
+    font-size: 0.9rem;
+    /* Font size for descriptions */
+    color: #666;
+    /* Description color */
+    margin: 0;
+    /* Remove default margin */
+    padding-top: 5px;
+    /* Add space above the text */
+    line-height: 1.4;
+    /* Adjust line height for readability */
+}
+
+.products-section {
+    padding: 40px;
+    /* Padding for the section */
+    background-color: #f9f9f9;
+    /* Light background for contrast */
+    text-align: center;
+    /* Center align text */
+}
+
+.products-section h2 {
+    font-size: 2em;
+    /* Font size for the heading */
+    margin-bottom: 20px;
+    /* Space below the heading */
+    color: #333;
+    /* Darker color for the heading */
+}
+
+
+
+
+
+
+
+
+
+/* Product Cards */
+.products-section {
+    padding: 40px;
+    /* Padding for the section */
+    background-color: #ffffff;
+    /* White background for the section */
+    text-align: center;
+    /* Center align text */
+}
+
+.products-section h2 {
+    font-size: 2em;
+    /* Font size for the heading */
+    margin: 20px 0;
+    /* Space below the heading */
+    color: #1a0471;
+    /* Darker color for the heading */
+}
+
+.products-container {
+    display: flex;
+    /* Enable Flexbox layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row if needed */
+    justify-content: center;
+    /* Center items horizontally */
+    align-items: flex-start;
+    /* Align items vertically to the top */
+    gap: 50px;
+    /* Add consistent spacing between items */
+    padding: 32px;
+    /* Add space inside the container */
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 30%;
+    /* Adjust width as needed */
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+    height: 350px;
+    /* Set a fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: space-between;
+    /* Space out children */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    /* Set a fixed height for images */
+    object-fit: contain;
+    /* Maintain aspect ratio */
+    border-radius: 8px;
+    /* Ensure images have rounded corners */
+}
+
+.product-card h4 {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product-card p {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.more-products-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.more-products-btn:hover {
+    background-color: #e7673c;
+}
+
+
+
+
+
+
+
+
+
+/* Business Channel Partners Section */
+.channel-partners-section {
+    padding: 40px;
+    /* Padding for the section */
+    background-color: #ffffff;
+    /* Light background for contrast */
+    text-align: center;
+    /* Center align text */
+}
+
+.channel-partners-section h2 {
+    font-size: 2em;
+    /* Font size for the heading */
+    margin: 20px 0;
+    /* Space below the heading */
+    color: #1a0471;
+    /* Darker color for the heading */
+}
+
+.partners-container {
+    display: flex;
+    /* Flexbox layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row if needed */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 30px;
+    /* Add consistent spacing between cards */
+    padding: 32px;
+    /* Padding inside the container */
+}
+
+.partner-card {
+    background-color: #ffffff;
+    /* White background for cards */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for cards */
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Padding inside cards */
+    width: 200px;
+    /* Fixed card width */
+    height: 210px;
+    /* Fixed card height */
+    display: flex;
+    /* Flexbox for card layout */
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: center;
+    /* Center-align child elements */
+    justify-content: space-between;
+    /* Evenly distribute space */
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.partner-card:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.partner-card img {
+    width: 100px;
+    /* Fixed size for logos */
+    height: 100px;
+    /* Fixed size for logos */
+    border-radius: 2px;
+    /* Circular shape for logos */
+    object-fit: contain;
+    /* Crop images to fit */
+    margin-bottom: 10px;
+    /* Space below image */
+}
+
+.partner-card h4 {
+    font-size: 0.9rem;
+    /* Font size for company name */
+    color: #555;
+    /* Text color */
+    margin: 10px 0;
+    /* Space above and below the name */
+    height: 50px;
+    /* Increased height for uniformity */
+    flex-grow: 1;
+    /* Allow the text to take up available space */
+    max-height: 40px;
+    /* Limit height to keep cards uniform */
+}
+
+
+
+
+
+
+
+
+
+/* Our Clients Section */
+.clients-section {
+    padding: 40px;
+    /* Padding for the section */
+    background-color: #ffffff;
+    /* Light background for contrast */
+    text-align: center;
+    /* Center align text */
+}
+
+.clients-section h2 {
+    font-size: 2em;
+    /* Font size for the heading */
+    margin: 20px 0;
+    /* Space below the heading */
+    color: #1a0471;
+    /* Darker color for the heading */
+}
+
+.clients-container {
+    display: flex;
+    /* Flexbox layout */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next row if needed */
+    justify-content: center;
+    /* Center items horizontally */
+    gap: 30px;
+    /* Add consistent spacing between cards */
+    padding: 32px;
+    /* Padding inside the container */
+}
+
+.client-card {
+    background-color: #ffffff;
+    /* White background for cards */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for cards */
+    text-align: center;
+    /* Center-align text */
+    padding: 20px;
+    /* Padding inside cards */
+    width: 200px;
+    /* Fixed card width */
+    height: 210px;
+    /* Fixed card height */
+    display: flex;
+    /* Flexbox for card layout */
+    flex-direction: column;
+    /* Stack child elements vertically */
+    align-items: center;
+    /* Center-align child elements */
+    justify-content: space-between;
+    /* Evenly distribute space */
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.client-card:hover {
+    transform: scale(1.05);
+    /* Scale effect on hover */
+}
+
+.client-card img {
+    width: 100px;
+    /* Fixed size for logos */
+    height: 100px;
+    /* Fixed size for logos */
+    border-radius: 2px;
+    /* Circular shape for logos */
+    object-fit: contain;
+    /* Crop images to fit */
+    margin-bottom: 10px;
+    /* Space below image */
+}
+
+.client-card h4 {
+    font-size: 0.9rem;
+    /* Font size for company name */
+    color: #555;
+    /* Text color */
+    margin: 10px 0;
+    /* Space above and below the name */
+    height: 50px;
+    /* Increased height for uniformity */
+    flex-grow: 1;
+    /* Allow the text to take up available space */
+    max-height: 40px;
+    /* Limit height to keep cards uniform */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .welcome-section {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 20px;
+    }
+
+    .welcome-text {
+        padding-right: 0;
+    }
+
+    .highlight-frame {
+        width: 250px;
+        height: 250px;
+    }
+
+    .products-container,
+    .partners-container,
+    .clients-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .product-card,
+    .partner-card,
+    .client-card {
+        width: 45%;
+        height: auto;
+    }
+
+    .info-item {
+        width: 140px;
+        height: auto;
+    }
+}
+
+/* For devices with max-width: 768px */
+@media (max-width: 768px) {
+    .company-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .company-info .info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .company-info .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .company-info .info p {
+        font-size: 0.9rem;
+    }
+
+    .highlight-frame {
+        width: 200px;
+        height: 200px;
+    }
+
+    .company-details {
+        padding: 30px;
+    }
+
+    .company-details h2 {
+        font-size: 1.5rem;
+    }
+        
+    .carousel {
+        display: none;
+    }
+
+    .carousel-images,
+    .carousel-image,
+    .carousel-image img {
+        display: none;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .info-container {
+        gap: 10px;
+    }
+
+    .info-item {
+        width: 140px;
+        height: auto;
+        padding: 20px 10px;
+        box-shadow: none;
+        margin-bottom: 15px;
+    }
+
+    .info-item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info-item h4 {
+        font-size: 0.9rem;
+    }
+
+    .info-item p {
+        font-size: 0.8rem;
+    }
+
+    .products-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .products-container,
+    .partners-container,
+    .clients-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .product-card,
+    .partner-card,
+    .client-card {
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-item {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* For Mobile Devices - max-width: 480px */
+@media (max-width: 480px) {
+    .home-content {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .welcome-section {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 10px;
+    }
+
+    .welcome-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-text p {
+        font-size: 0.9rem;
+    }
+
+    .highlight-frame {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Hide the carousel completely */
+    .carousel {
+        display: none;
+    }
+
+    .carousel-images,
+    .carousel-image,
+    .carousel-image img {
+        display: none;
+    }
+
+    .company-details {
+        padding: 20px;
+    }
+
+    .company-details h2 {
+        font-size: 1.2rem;
+    }
+
+    .info-row {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .info-container {
+        gap: 5px;
+    }
+
+    .info-item {
+        width: 120px;
+        padding: 15px 5px;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    .info-item img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .info-item h4 {
+        font-size: 0.8rem;
+    }
+
+    .info-item p {
+        font-size: 0.7rem;
+    }
+
+    .products-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .products-container,
+    .partners-container,
+    .clients-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product-card,
+    .partner-card,
+    .client-card {
+        width: 100%;
+        margin: auto;
+    }
+
+    .info-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info-item {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .info-item img {
+        width: 30px;
+        height: 30px;
+    }
+}

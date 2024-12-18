@@ -1,0 +1,397 @@
+/* src/pages/ContactUs.css */
+.contact-us {
+    padding: 2rem;
+    /* Padding for the main content */
+    font-family: 'Arial', sans-serif;
+    /* Font family */
+    color: #333;
+    /* Text color */
+    line-height: 1.6;
+    /* Line height for readability */
+    display: flex;
+    /* Flexbox layout */
+    flex-direction: column;
+    /* Column direction */
+    gap: 2rem;
+    /* Space between elements */
+}
+
+.pillars {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    /* Heading font size */
+    text-align: center;
+    /* Centered heading */
+    margin: 20px 0;
+    /* Space below heading */
+    color: #1a0471;
+    /* Heading color */
+    font-weight: bold;
+    /* Bold heading */
+}
+
+.team-details {
+    padding: 32px;
+    margin: 0 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-member {
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.01);
+}
+
+.team-member img {
+    width: 240px;
+    /* Adjust size as needed */
+    height: 300px;
+    border-radius: 8px;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px;
+}
+
+.company-info h4 {
+    max-width: 50%;
+    font-size: 1.2rem;
+    /* Heading font size */
+    text-align: center;
+    /* Centered heading */
+    margin: 20px 0;
+    /* Space below heading */
+    font-weight: bold;
+    /* Bold heading */
+}
+
+.company-info h2 {
+    font-size: 2rem;
+    /* Heading font size */
+    text-align: center;
+    /* Centered heading */
+    margin: 20px 0;
+    /* Space below heading */
+    color: #1a0471;
+    /* Heading color */
+    font-weight: bold;
+    /* Bold heading */
+}
+
+.map-container {
+    margin: 20px 0;
+}
+
+.contact-info {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.company-info-main-box {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-info-main-box h4 {
+    color: #555;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    color: #1a0471;
+}
+
+.company-info h3 {
+    font-size: 1.8rem;
+    color: #1a0471;
+}
+
+.company-info p {
+    margin: 16px 0;
+}
+
+.company-info {
+    padding: 40px;
+    background-color: #fff;
+    /* White background */
+    box-sizing: border-box;
+    /* Include padding in width */
+    width: 100%;
+    /* Full width */
+    text-align: center;
+    /* Center text */
+}
+
+.company-info h2 {
+    font-size: 2rem;
+    /* Heading font size */
+    margin: 20px 0;
+    /* Space below heading */
+    color: #1a0471;
+    /* Heading color */
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px;
+    /* Limit maximum width */
+    margin: 20px auto;
+    /* Center the container horizontally */
+    padding: 20px 20px 20px 20px;
+    height: 490px;
+    /* Set a default height */
+    border: 1px solid #ddd;
+    /* Optional: Add a border for clarity */
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+    object-fit: contain;
+}
+
+.query-section {
+    background-color: #f9f9f9;
+    /* Light background for the form */
+    width: 50%;
+    /* Set a width for the form */
+    padding: 20px;
+    /* Padding for the form */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin: 0 auto;
+    /* Center the form horizontally */
+    display: flex;
+    /* Use flexbox for centering */
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center children horizontally */
+}
+
+.query-box {
+    width: 100%;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #ff7f50;
+    /* Button background color */
+    color: white;
+    /* Button text color */
+    margin-top: 1rem;
+    /* Space above button */
+    padding: 0.8rem 1.5rem;
+    /* Padding for button */
+    font-size: 1rem;
+    /* Font size for button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Transition for hover effect */
+}
+
+
+.contact-form button:hover {
+    background-color: #e7673c;
+    /* Change on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .pillars {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .team-details {
+        margin: 0 64px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 80%;
+        margin: 10px 0;
+        padding: 16px;
+    }
+
+    .team-member img {
+        width: 200px;
+        height: auto;
+    }
+
+    .query-section {
+        width: 80%;
+        padding: 16px;
+    }
+
+    .contact-heading {
+        font-size: 1.5rem;
+    }
+
+    .company-info h2,
+    .company-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .company-info h4 {
+        font-size: 1rem;
+    }
+
+    .map-container {
+        max-width: 100%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-us {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .pillars {
+        padding: 10px;
+    }
+
+    .team-details {
+        margin: 0 32px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: auto;
+    }
+
+    .query-section {
+        width: 90%;
+    }
+
+    .company-info-main-box {
+        padding: 16px;
+    }
+
+    .company-info h2 {
+        font-size: 1.8rem;
+    }
+
+    .company-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .company-info h4 {
+        font-size: 0.9rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.2rem;
+    }
+
+    .map-container {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading {
+        font-size: 1.2rem;
+    }
+
+    .team-details {
+        margin: 0 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: auto;
+    }
+
+    .query-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .company-info {
+        padding: 20px;
+    }
+
+    .company-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .company-info h3 {
+        font-size: 1rem;
+    }
+
+    .company-info h4 {
+        font-size: 0.8rem;
+    }
+
+    .map-container {
+        display: none;
+    }
+}

@@ -1,0 +1,174 @@
+/* src/components/Navbar.css */
+.navbar {
+    position: fixed;
+    /* Fixes navbar to the top of the page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ensure full width */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    /* Soft shadow */
+    height: 70px;
+    background-color: #fff;
+}
+
+.logo-link {
+    text-decoration: none;
+    padding: 0;
+}
+
+body {
+    padding-top: 70px;
+    /* Adjust for navbar height to prevent content overlap */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    /* Push the logo to the left */
+}
+
+.logo img {
+    height: 40px;
+    width: 40px;
+    margin-left: 10px;
+    /* Space between logo and company name */
+}
+
+.company-name {
+    font-size: 1rem;
+    color: #1a0471;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    /* Space between nav links */
+}
+
+.nav-links a {
+    color: #1f1f1f;
+    /* Set default link color */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 0.9rem;
+    /* Font size for links */
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    /* Add padding for clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transitions */
+}
+
+.nav-links .active {
+    /* background-color: #024089; */
+    background-color: #ff7f50;
+    /* Background color for active link */
+    outline: none;
+    /* Removes focus border */
+    color: white;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover .active {
+    background-color: #e7673c;
+}
+
+.menu-toggle {
+    display: none;
+    /* Hide by default on large screens */
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        /* Show menu toggle button */
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide by default */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links.show {
+        display: flex;
+        /* Display when menu is toggled */
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-toggle {
+        display: block;
+        /* Show menu toggle button */
+    }
+
+    .nav-links {
+        display: none;
+        /* Hide by default */
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-links.show {
+        display: flex;
+        /* Display when menu is toggled */
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .company-name {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+}
